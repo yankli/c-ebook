@@ -89,7 +89,7 @@ flowchart TB
 ## Data flow: model to kernels
 
 ```mermaid
-flowchart LR
+flowchart TD
     A["Model inputs<br/>token_ids, positions<br/>multimodal_data"] 
     B["Model wrapper<br/>torch.nn.Module"]
     C["Python forward()<br/>execution"]
@@ -116,6 +116,7 @@ flowchart LR
 
 ```
 ```mermaid
+flowchart TD
 G["Partition into<br/>subgraphs"]
     H["Summarize<br/>signatures"]
     I["Match backend<br/>rules"]
