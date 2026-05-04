@@ -111,7 +111,20 @@ flowchart LR
     D --> E
     E --> F
     F --> G
-    G --> H
+  
+
+
+```
+```mermaid
+G["Partition into<br/>subgraphs"]
+    H["Summarize<br/>signatures"]
+    I["Match backend<br/>rules"]
+    J["Select impl:<br/>CustomOp/IR/Inductor"]
+    K["Lower to<br/>kernels"]
+    L["Capture or<br/>execute"]
+    M["Backend<br/>kernels"]
+    N["Outputs<br/>hidden_states"]
+  G --> H
     H --> I
     I --> J
     J --> K
