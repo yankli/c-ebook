@@ -97,13 +97,7 @@ flowchart TD
     E["FX graph<br/>ATen ops"]
     F["Normalize &<br/>preserve boundaries"]
     G["Partition into<br/>subgraphs"]
-    H["Summarize<br/>signatures"]
-    I["Match backend<br/>rules"]
-    J["Select impl:<br/>CustomOp/IR/Inductor"]
-    K["Lower to<br/>kernels"]
-    L["Capture or<br/>execute"]
-    M["Backend<br/>kernels"]
-    N["Outputs<br/>hidden_states"]
+
 
     A --> B
     B --> C
